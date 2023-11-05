@@ -1,0 +1,132 @@
+.container, .practice-container{
+    margin: 20px 50px;
+}
+.display{
+    display: none;
+}
+.container h1{
+    margin: 20px 0;
+    color: #04364A;
+    font-size: 48px;
+}
+.content1, .content2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.content1 div, .content2 div{
+    font-size: 64px;
+    border-radius: 10px;
+    height: 150px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    background-position: center;
+    background-size: cover;
+}
+
+.content1 .item1{
+    background-image: url("picture/hiragana.jpg");
+}
+.content1 .item2{
+    background-image: url("picture/katakana.jpg");
+}
+
+.content2 .item1{
+    background-image: url("picture/n5.jpg");
+}
+.content2 .item2{
+    background-image: url("picture/n4.jpg");
+}
+.content2 .item3{
+    background-image: url("picture/n3.jpg");
+}
+.content2 .item4{
+    background-image: url("picture/n2.jpg");
+}
+.content2 .item5{
+    background-image: url("picture/n1.jpg");
+}
+
+.content1 .item1:hover, .content1 .item2:hover, .content2 .item1:hover, .content2 .item2:hover, .content2 .item3:hover, .content2 .item4:hover, .content2 .item5:hover{
+    filter: grayscale();
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Box for Kana */
+.practice-container{
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 400px;
+    float: left;
+    height: 325px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 11px;
+}
+
+.box .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04364A;
+    height: 66%;
+    border-radius: 10px 10px 0 0 ;
+}
+.box .top h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #DAFFFB;
+    font-size: 96px;
+}
+
+.box .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAFFFB;
+    height: 34%;
+    border-radius: 0 0 10px 10px;
+}
+.box .bottom input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    color: #04364A;
+    font-size: 18px;
+    text-align: center;
+}
+.box .bottom input:focus{
+    outline: 0;
+    /* border-bottom: 1px solid; */
+}
+
+@media (max-width: 768px) {
+    .container, .practice-container{
+        margin: 20px 10px;
+    }
+    .content1, .content2{
+        grid-template-columns: 1fr;
+    }
+    .content1 div, .content2 div{
+        font-size: 48px;
+        height: 125px;
+    }
+    .container h1{
+        font-size: 32px;
+    }
+    .box .top h1{
+        font-size: 64px;
+    }
+}

@@ -180,9 +180,6 @@ container.addEventListener('click',function(e){
                 next_arrow.classList.remove('inactive-arrow')
                 previous_arrow.classList.remove('inactive-arrow')
             }
-            console.log(node_card)
-            console.log(modal_box_roman)
-            console.log(modal_box_mean)
         }
     }
 })
