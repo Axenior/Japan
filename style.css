@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 577px) {
+    .container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .container, .select-kana, .title{
+        padding: 10px 50px;
+    }
+}
+ 
+@media (min-width: 993px) {
+    .container{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+@media (min-width: 1201px) {
+    .container{
+        grid-template-columns: repeat(7,1fr);
+    }
+}
+
+  
+
+

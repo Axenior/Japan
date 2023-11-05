@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    background-color: #04364A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    color: white;
+    height: 50px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  .navbar-menu a:hover{
+    color: #64CCC5;
+  }
+  ul li a.active-menu{
+    color: #64CCC5;
+  }
+  .hamburger-menu{
+      display: none;
+  }
+  .hamburger-menu:hover{
+      cursor: pointer;
+  }
+  .navbar-menu.show {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #04364A;
+    }
+  
+  .navbar-show{
+      display: none;
+      background-color: #04364A;
+      text-align: center;
+  }
+  .navbar-show li{
+      padding: 5px 0;
+  }
+  .navbar-show li a{
+      display: block;
+      text-decoration: none;
+      color:#DAFFFB;
+      font-size: 18px;
+  }
+  .navbar-show li a:hover{
+      background-color: #DAFFFB;
+      color: #04364A;
+  }
+  /* Media query untuk membuat navbar responsif */
+  @media screen and (max-width: 768px) {
+    .navbar{
+      padding: 10px 10px;
+    }
+      .navbar-menu {
+          display: none;
+        }
+      
+        .hamburger-menu {
+          display:block;
+        }
+  
+        .bar {
+          width: 30px;
+          height: 3px;
+          background-color: #fffbfb;
+        }
+        .bar:nth-child(2) {
+          margin: 6px 0;
+        }
+        .bar:nth-child(3) {
+          margin-top: 6px;
+        }
+  }
