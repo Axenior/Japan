@@ -57,9 +57,17 @@
     cursor: pointer;
 }
 
-
+/* Timer */
+.timer{
+    font-size: 24px;
+    text-align: end;
+    color: #04364A;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
 /* Box for Kana */
-.practice-container{
+.box-container{
     display: flex;
     justify-content: center;
 }
@@ -106,11 +114,30 @@
     color: #04364A;
     font-size: 18px;
     text-align: center;
+    width: 80%;
+    max-width: 200px;
 }
 .box .bottom input:focus{
     outline: 0;
     /* border-bottom: 1px solid; */
 }
+
+.kanji{
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+.option-container{
+    margin-top: 20px;
+}
+.option {
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:#DAFFFB;
+    border: 1px solid #DAFFFB;
+    border-radius: 5px;
+}
+
 
 @media (max-width: 768px) {
     .container, .practice-container{
@@ -123,6 +150,9 @@
         font-size: 48px;
         height: 125px;
     }
+}
+
+@media (max-width: 578px) {
     .container h1{
         font-size: 32px;
     }
