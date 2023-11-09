@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Kamus</title>
     <link rel="stylesheet" href="/navbar/navbar.css">
     <link rel="stylesheet" href="latihan.css">
 </head>
@@ -41,19 +41,11 @@
         </div>
         <h1>Kosakata</h1>
         <div class="content2">
-            <div class="item1">
-                N5
-            </div>
-            <div class="item2">
-                N4
-            </div><div class="item3">
-                N3
-            </div>
-            <div class="item4">
-                N2
-            </div><div class="item5">
-                N1
-            </div>
+            <div class="item1">N5</div>
+            <div class="item2">N4</div>
+            <div class="item3">N3</div>
+            <div class="item4">N2</div>
+            <div class="item5">N1</div>
         </div>
     </div>
 
@@ -72,7 +64,22 @@
             </div>
         </div>
 
+        <div class="total-question display">
+            <p>Kamu dapat pilih jumlah soal dari :</p>
+            <p id="range-question">1-999</p>
+            <div class="center">
+                <input id="total-input" type="text" min="1" max="" placeholder="Mau Berapa Soal?" autocomplete="off">
+            </div>
+            <div class="center">
+                <p class="alert display">Salah masukkin jumlah nih</p>
+            </div>
+            <div class="center">
+                <button id="submit">Menuju Latihan</button>
+            </div>
+        </div>
+
         <div class="kosakata display">
+            <h4 class="number-kanji">0</h4>
             <h1 class="kanji">This Kanji</h1>
             <div class="option-container">
                 <div class="option">
@@ -86,6 +93,12 @@
                 <div class="option">
                     <h3>Pilihan 3</h3>
                     <p>Arti 3</p>
+                </div>
+            </div>
+            <div class="score display">
+                <p class="text-score">Your Score :</p>
+                <div class="number-score">
+                    <p>999/999</p>
                 </div>
             </div>
         </div>

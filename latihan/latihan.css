@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .container, .practice-container{
     margin: 20px 50px;
 }
@@ -122,23 +125,136 @@
     /* border-bottom: 1px solid; */
 }
 
+.total-question{
+    width: fit-content;
+    /* height: 400px; */
+    background-color:#DAFFFB;
+    border: 2px solid #04364A;
+    padding: 20px;
+    border-radius: 5px;
+    color: #04364A;
+    font-size: 24px;
+}
+.total-question p{
+    margin-bottom: 20px;
+    text-align: center;
+    /* font-size: 16px; */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.total-question input{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #04364A;
+    background-color: rgba(0, 0, 0,0);
+    font-size: 20px;
+    color: #04364A;
+}
+.total-question input:focus{
+    outline: none;
+}
+
+.total-question button{
+    border-radius: 5px;
+    border: none;
+    background-color: #04364A;
+    color: #DAFFFB;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.total-question button:hover{
+    cursor: pointer;
+}
+.alert{
+    color:#FF5C5C;
+}
+.number-kanji{
+    padding: 2px 0;
+    font-size: 16px;
+    background-color: #04364A;
+    color: #DAFFFB;
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
 .kanji{
     font-size: 64px;
     margin-bottom: 50px;
+    background-color: #04364A;
+    color: #DAFFFB;
+    padding: 10px;
+    border-radius: 0 5px 5px 5px;
+    max-width: 500px;
+}
+.finish{
+    border-radius: 5px;
+    text-align: center;
 }
 .option-container{
     margin-top: 20px;
 }
 .option {
     max-width: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     padding: 10px;
     background-color:#DAFFFB;
     border: 1px solid #DAFFFB;
     border-radius: 5px;
 }
 
-
+.option:hover{
+    cursor: pointer;
+}
+.option:active{
+    border: 1px solid #04364A;
+}
+.correct{
+    background-color: #66FF99;
+}
+.wrong{
+    background-color: #FF5C5C;
+}
+.score{
+    border: 2px solid #04364A;
+    border-radius: 5px;
+    background-color:#DAFFFB;
+    max-width: 500px;
+    padding: 10px;
+    height: 300px;
+}
+.text-score{
+    /* background-color: #FF5C5C; */
+    height: 25%;
+    font-size: 48px;
+    text-align: center;
+    color: #04364A;
+}
+.number-score{
+    /* background-color: aliceblue; */
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number-score p{
+    font-size: 48px;
+    color: #04364A;
+    background-color: #DAFFFB;
+    border-radius: 100px;
+    border: 4px solid #04364A;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 768px) {
     .container, .practice-container{
         margin: 20px 10px;
@@ -158,5 +274,31 @@
     }
     .box .top h1{
         font-size: 64px;
+    }
+    .kanji{
+        font-size: 32px;
+        background-color: #04364A;
+        color: #DAFFFB;
+        padding: 10px;
+    }
+    .text-score{
+        font-size: 32px;
+    }
+    .number-score p{
+        font-size: 32px;
+        width: 175px;
+        height: 175px;
+    }
+    .number-kanji{
+        font-size: 14px;
+    }
+    .total-question input{
+        font-size: 16px;
+    }
+    .total-question p{
+        font-size: 16px;
+    }
+    .total-question button{
+        font-size: 16px;
     }
 }
