@@ -64,6 +64,8 @@ container.addEventListener('click',function(e){
         practiceBox.classList.remove('display')
         timerElement.classList.remove('display')
         getKana(choose)
+        const back = document.body.querySelector('.back')
+        back.classList.remove('display')
     }
     else if(e.target.parentNode.classList.contains('content2')){
         choose = e.target.textContent.toLowerCase()
@@ -81,7 +83,10 @@ container.addEventListener('click',function(e){
         };
         
         handleAsyncOperation();
+        const back = document.body.querySelector('.back')
+        back.classList.remove('display')
     }
+    
 })
 
 const totalInput = document.body.querySelector('#total-input')
@@ -93,6 +98,8 @@ submitButton.addEventListener('click',function(){
         totalQuestionElement.classList.add('display')
         practiceKosakata.classList.remove('display');
         getKosakata(choose);
+        const back = document.body.querySelector('.back')
+        back.classList.add('display')
     }else{
         const alert = document.body.querySelector('.alert')
         alert.classList.remove('display')
@@ -138,6 +145,8 @@ function getRandomKeyAndDeleteKana(kana,choose) {
         box_kana.innerHTML = "Selesai"
         input.value = timerElement.textContent
         input.readOnly = true
+        const back = document.body.querySelector('.back')
+        back.classList.remove('display')
         return;
     }
     
@@ -166,6 +175,8 @@ input.addEventListener('keyup',function(){
     // Start a timer that repeats a function at a specified interval
     if(!start){
         startTimer()
+        const back = document.body.querySelector('.back')
+        back.classList.add('display')
     }
     if(input.value.toLowerCase() === tempKey){
         input.value =''
@@ -188,6 +199,8 @@ function getRandomKeyAndDeleteKosakata(kosakata) {
         scoreElement.classList.remove('display')
         optionContainer.classList.add('display')
         numberElement.classList.add('display')
+        const back = document.body.querySelector('.back')
+        back.classList.remove('display')
         return;
     }
 

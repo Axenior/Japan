@@ -4,7 +4,6 @@
 }
 
 .navbar {
-
     background-color: #04364A;
     display: flex;
     justify-content: space-between;
@@ -12,6 +11,7 @@
     padding: 10px 50px;
     color: white;
     height: 50px;
+    font-family: 'RocknRoll One', sans-serif;
   }
   
   .navbar-logo {
@@ -97,4 +97,7 @@
         .bar:nth-child(3) {
           margin-top: 6px;
         }
+    .navbar-logo{
+      font-size: 18px;
+    }
   }

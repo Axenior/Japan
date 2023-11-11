@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.container, .modal{
+    /* font-family: 'Noto Serif JP', serif; */
+}
+
 .select-kana{
     display: flex;
     justify-content: space-between;

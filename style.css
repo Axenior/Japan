@@ -3,6 +3,58 @@
     padding: 0;
 }
 
+.gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #DAFFFB, #fffbfb);
+    z-index: -1; /* Menempatkan latar belakang di belakang konten */
+}
+.container.index{
+    margin: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+    color: #04364A;
+    max-width: 800px;
+}
+
+
+.gradient-text {
+    background-image: linear-gradient(to right, #04364A, #DAFFFB);
+    -webkit-background-clip: text; /* Gunakan background teks sebagai clip */
+    color: transparent; /* Jadikan teks menjadi transparan */
+}
+.container.index h3{
+    margin-top: 25px;
+}
+span.logo{
+    background-image: linear-gradient(to right, #0074cc, #0099ff, #66b2ff, #99ccff);
+    -webkit-background-clip: text; /* Gunakan background teks sebagai clip */
+    color: transparent; /* Jadikan teks menjadi transparan */
+}
+
+.container.index a{
+    color: #0074cc;
+}
+
+@media (max-width: 768px) {
+    .container.index h1{
+        font-size: 16px;
+    }
+    .container.index h2{
+        font-size: 14px;
+    }
+    .container.index h3{
+        font-size: 14px;
+    }
+    .container.index p{
+        font-size: 12px;
+    }
+    .container.index a{
+        font-size: 12px;
+    }
+}
 @media (min-width: 577px) {
     .container{
         grid-template-columns: repeat(4,1fr);
