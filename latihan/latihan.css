@@ -1,6 +1,3 @@
-*{
-    /* box-sizing: border-box; */
-}
 .container, .practice-container{
     margin: 20px 50px;
 }
@@ -312,5 +309,9 @@
     }
     .total-question button{
         font-size: 16px;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
     }
 }
