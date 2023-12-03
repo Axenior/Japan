@@ -108,7 +108,7 @@ submitButton.addEventListener('click',function(){
 
 async function fetchKana(){
     try {
-        const response = await fetch("/kana/kana.json");
+        const response = await fetch("../kana/kana.json");
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
@@ -122,7 +122,7 @@ async function fetchKana(){
 
 async function fetchKosakata(x){
     try{
-        const response = await fetch("/kosakata/"+x+".json");
+        const response = await fetch("../kosakata/"+x+".json");
         if(!response.ok){
             throw new Error("Network response was not ok")
         }
